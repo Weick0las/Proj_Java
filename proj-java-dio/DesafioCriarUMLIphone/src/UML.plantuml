@@ -22,4 +22,5 @@ AparelhoTelefonico : +iniciarCorreioVoz()
 NavegadorInternet : +exibirPagina(String url)
 NavegadorInternet : +adicionarNovaAba()
 NavegadorInternet : +atualizarPagina()
+
 @enduml
