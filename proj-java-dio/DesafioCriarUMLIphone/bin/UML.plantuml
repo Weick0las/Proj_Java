@@ -1,0 +1,25 @@
+@startuml UML
+
+skinparam classAttributeIconSize 0
+
+class iPhone 
+interface ReprodutorMusical
+interface AparelhoTelefonico
+interface NavegadorInternet
+
+iPhone ..|> ReprodutorMusical : implements
+iPhone ..|> AparelhoTelefonico : implements
+iPhone ..|> NavegadorInternet : implements
+
+ReprodutorMusical : +tocar()
+ReprodutorMusical : +pausar()
+ReprodutorMusical : +selecionarMusica(String musica)
+
+AparelhoTelefonico : +ligar(String numero)
+AparelhoTelefonico : +atender()
+AparelhoTelefonico : +iniciarCorreioVoz()
+
+NavegadorInternet : +exibirPagina(String url)
+NavegadorInternet : +adicionarNovaAba()
+NavegadorInternet : +atualizarPagina()
+@enduml
